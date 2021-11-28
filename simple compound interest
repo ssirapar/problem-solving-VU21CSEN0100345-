@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main()
+{
+    int p,t;
+    float si,r,price,ci;
+    printf("enter the principle value,enter the rate,enter the time");
+    scanf("%d%f%d",&p,&r,&t);
+    si=(p*t*r)/100;
+    printf("\n%f",si);
+    price=p*pow((1+r/100),t);
+    ci=price-p;
+    
+    printf("\n compound interest %f", ci);
+
+    return 0 ;
+    
+}
+
