@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main()
+{
+    int month;
+
+    /* Input month number from user */
+    printf("Enter month number(1-12): ");
+    scanf("%d", &month);
+
+    switch(month)
+    {
+        cases:1-12;
+            printf("31,28/29,31,30,31,30,31,31,30,31,30,31");
+            break;
+        
+        default: 
+            printf("Invalid input! Please enter month number between 1-12");
+    }
+    return 0;
+
+}
