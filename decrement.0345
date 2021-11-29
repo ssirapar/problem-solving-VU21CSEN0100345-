@@ -1,0 +1,9 @@
+#include <stdio.h>
+#include<conio.h>
+int main()
+{
+    int a;
+    for(a=10;a<10;a--)
+printf("%5d",a);
+return 0;
+}
