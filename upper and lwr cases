@@ -1,0 +1,19 @@
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+    char lwr,upr;//declare variables
+    int ascii;
+    //convert in lower character;
+  printf("enter the upper case character:");
+  scanf("%c",&upr);
+  ascii=upr+32;
+  printf("%c character of lower value is %c",ascii,upr);
+  //convert in upper character;
+printf("enter the lower case character:");
+scanf("%c",&lwr);
+ascii=lwr-32;
+printf("%c character of upper case is %c",ascii,lwr);
+
+return 0;
+}
