@@ -1,0 +1,22 @@
+#include <stdio.h>
+void reorder(int *, int *, int *);
+void swap(int *, int  *);
+
+void main()
+{
+    int a, b, c;
+    printf("Enter three numbers : ");
+    while (scanf("%i %i %i", &a, &b, &c)==3)
+    {
+        reorder(&a, &b, &c);
+        printf("Now a is %d, b is %d and c is %d.\n\n", a, b, c);
+        printf("Enter three numbers : ");
+    }
+}
+
+
+void swap(int* a, int* b) {
+    int temp = *a;
+    *a = *b;
+    *b = temp;
+}
