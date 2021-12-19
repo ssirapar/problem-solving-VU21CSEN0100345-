@@ -1,20 +1,22 @@
 #include <stdio.h>
-
-void main() {
-    int m, n;
-    printf("\nEnter the first number\n");
-    scanf("\n%d", &m);
-    printf("\nEnter the second number\n");
-    scanf("\n%d", &n);
-
-    switch (m > n) { /* it will give result either as 0 or 1*/
-      case 0:
-        printf("\nThe greater number is %d\n", n);
-        break;
-      case 1:
-        printf("\nThe greater number is %d\n", m);
-        break;
-      default:
-        printf("\nBoth number's are same\n");
+int main()
+{
+    int num1, num2;
+   
+    printf("Please Enter Two different values\n");
+    // Read two numbers from the user
+    scanf("%d %d", &num1, &num2);
+    if(num1 > num2)
+    {
+        printf("%d is Largest\n", num1);
     }
-
+    else if (num2 > num1)
+    {
+        printf("%d is Largest\n", num2);
+    }
+    else
+    {
+        printf("Both are Equal\n");
+    }
+    return 0;
+}
